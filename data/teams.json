@@ -1,0 +1,90 @@
+[
+  {
+    "team": "BOS",
+    "conference": "East",
+    "players": [
+      {"id": 1, "name": "Jrue Holiday", "position": "PG", "ppg": 9.5, "rpg": 4.0, "apg": 4.1},
+      {"id": 2, "name": "Derrick White", "position": "SG", "ppg": 18.8, "rpg": 5.0, "apg": 3.5},
+      {"id": 3, "name": "Jaylen Brown", "position": "SF", "ppg": 22.1, "rpg": 7.1, "apg": 3.9},
+      {"id": 4, "name": "Jayson Tatum", "position": "PF", "ppg": 28.1, "rpg": 11.5, "apg": 5.4},
+      {"id": 5, "name": "Kristaps Porzingis", "position": "C", "ppg": 20.2, "rpg": 7.1, "apg": 2.1}
+    ]
+  },
+  {
+    "team": "IND",
+    "conference": "East",
+    "players": [
+      {"id": 6, "name": "Tyrese Haliburton", "position": "PG", "ppg": 17.3, "rpg": 5.3, "apg": 8.6},
+      {"id": 7, "name": "Andrew Nembhard", "position": "SG", "ppg": 12.5, "rpg": 3.2, "apg": 4.7},
+      {"id": 8, "name": "Aaron Nesmith", "position": "SF", "ppg": 12.7, "rpg": 5.7, "apg": 1.1},
+      {"id": 9, "name": "Pascak Siakim", "position": "PF", "ppg": 20.6, "rpg": 6.5, "apg": 3.2},
+      {"id": 10, "name": "Myles Turner", "position": "C", "ppg": 13.8, "rpg": 4.8, "apg": 1.4}
+    ]
+  },
+  {
+    "team": "NY",
+    "conference": "East",
+    "players": [
+      {"id": 11, "name": "Jalen Brunson", "position": "PG", "ppg": 30.3, "rpg": 2.5, "apg": 5.6},
+      {"id": 12, "name": "Mikal Bridges", "position": "SG", "ppg": 15.5, "rpg": 3.2, "apg": 3.7},
+      {"id": 13, "name": "OG Anunoby", "position": "SF", "ppg": 17.5, "rpg": 3.7, "apg": 1.1},
+      {"id": 14, "name": "Josh Hart", "position": "PF", "ppg": 8.6, "rpg": 9.5, "apg": 3.2},
+      {"id": 15, "name": "Karl_Anthony Towns", "position": "C", "ppg": 24.8, "rpg": 12.8, "apg": 1.4}
+    ]
+  },
+  {
+    "team": "CLE",
+    "conference": "East",
+    "players": [
+      {"id": 16, "name": "Darius Garland", "position": "PG", "ppg": 14.3, "rpg": 2.3, "apg": 4.0},
+      {"id": 17, "name": "Donovan Mitchell", "position": "SG", "ppg": 34.2, "rpg": 5.2, "apg": 3.7},
+      {"id": 18, "name": "Max Strus", "position": "SF", "ppg": 12.2, "rpg": 7.7, "apg": 3.1},
+      {"id": 19, "name": "Evan Mobley", "position": "PF", "ppg": 18.6, "rpg": 9.5, "apg": 1.2},
+      {"id": 20, "name": "Jarrett Allen", "position": "C", "ppg": 12.8, "rpg": 7.8, "apg": 1.4}
+    ]
+  },
+  {
+    "team": "OKC",
+    "conference": "West",
+    "players": [
+      {"id": 21, "name": "Shai Gilgeous-Alexander", "position": "PG", "ppg": 29.7, "rpg": 6.3, "apg": 6.6},
+      {"id": 22, "name": "Alex Caruso", "position": "SG", "ppg": 11.5, "rpg": 8.2, "apg": 2.7},
+      {"id": 23, "name": "Jalen Williams", "position": "SF", "ppg": 17.7, "rpg": 5.7, "apg": 6.1},
+      {"id": 24, "name": "Chet Holmgren", "position": "PF", "ppg": 14.6, "rpg": 10.5, "apg": 1.2},
+      {"id": 25, "name": "Isaiah Hartenstein", "position": "C", "ppg": 11.8, "rpg": 8.8, "apg": 2.4}
+    ]
+  },
+  {
+    "team": "LAL",
+    "conference": "West",
+    "players": [
+      {"id": 26, "name": "Luka Doncic", "position": "PG", "ppg": 30.3, "rpg": 7.3, "apg": 6.6},
+      {"id": 27, "name": "Austin Reaves", "position": "SG", "ppg": 16.5, "rpg": 5.2, "apg": 3.7},
+      {"id": 28, "name": "Dorian Finney-Smith", "position": "SF", "ppg": 6.7, "rpg": 4.7, "apg": 2.1},
+      {"id": 29, "name": "Rui Hachimura", "position": "PF", "ppg": 14.6, "rpg": 4.5, "apg": 1.2},
+      {"id": 30, "name": "Lebron James", "position": "C", "ppg": 25.4, "rpg": 9.8, "apg": 6.4}
+    ]
+  },
+  {
+    "team": "DEN",
+    "conference": "West",
+    "players": [
+      {"id": 31, "name": "Russel Westbrook", "position": "PG", "ppg": 9.3, "rpg": 2.3, "apg": 2.6},
+      {"id": 32, "name": "Jamal Murray", "position": "SG", "ppg": 20.5, "rpg": 4.2, "apg": 4.7},
+      {"id": 33, "name": "Christian Braun", "position": "SF", "ppg": 12.7, "rpg": 6.7, "apg": 2.1},
+      {"id": 34, "name": "Aaron Gordon", "position": "PF", "ppg": 13.6, "rpg": 9.5, "apg": 3.2},
+      {"id": 35, "name": "Nikola Jokic", "position": "C", "ppg": 28.8, "rpg": 13.8, "apg": 6.4}
+    ]
+  },
+  {
+    "team": "MIN",
+    "conference": "West",
+    "players": [
+      {"id": 36, "name": "Anthony Edwards", "position": "PG", "ppg": 27.3, "rpg": 8.3, "apg": 6.6},
+      {"id": 37, "name": "Donte DiVincenzo", "position": "SG", "ppg": 8.5, "rpg": 4.2, "apg": 3.7},
+      {"id": 38, "name": "Jaden McDaniels", "position": "SF", "ppg": 17.7, "rpg": 5.7, "apg": 1.1},
+      {"id": 39, "name": "Julius Randle", "position": "PF", "ppg": 22.6, "rpg": 5.5, "apg": 4.2},
+      {"id": 40, "name": "Rudy Gobert", "position": "C", "ppg": 8.8, "rpg": 9.8, "apg": 0.4}
+    ]
+  }
+]
