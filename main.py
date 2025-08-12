@@ -1,4 +1,5 @@
 import json
+import random 
 
 user_team = []
 #show list of available players to draft in main menu 
@@ -31,15 +32,75 @@ def draft_team(players, team_size =5):
         #removed selected player from pool 
             selected_player = players.pop(choice)
             drafted.append(selected_player)
-            print(f"✅ {selected_player['name']} addted to your team.")
+            print(f"✅ {selected_player['name']} added to your team.")
 
         except ValueError:
             print("Enter a valid number.")
 
     return drafted
 
+    #logic for simulating matches
+def simulate_match(user_team):
+    players_pool = load_players()
 
+    drafted_names = {player['name'] for player in user_team}
+    available_players = [p for p in players_pool if p['name'] not in drafted_names]
+    cpu_team = random.sample(available_players, len(user_team))
 
+    print("\n CPU Team Drafted:")
+    for idx, player in enumerate(cpu_team, start=1):
+        print(f"{idx}. {player['name']} {player['team']} - {player['position']} - {player['ppg']} PPG")
+
+    #calulating score between User and CPU
+    def simulate_player_stats(team):
+        stats = []
+
+        for player in team:
+            points = round(player['ppg'] + random.uniform(-5, 5))
+            rebounds = random.randint(2, 12)
+            assists = random.randint(1, 11)
+
+            stats.append({
+                'name': player['name'],
+                'team': player['team'],
+                'points': points,
+                'rebounds': rebounds,
+                'assists': assists
+            })
+        return stats
+
+#Team box score
+    def print_stats(title, stats):
+        print(f"\n {title}")
+        for idx, player in enumerate(stats, start=1):
+            print(f"{idx}. {player['name']} - {player['points']} PTS, {player['rebounds']} REB, {player['assists']} AST")
+    
+    #Sim CPU and User players stats
+    user_stats = simulate_player_stats(user_team)
+    cpu_stats = simulate_player_stats(cpu_team)
+
+    #calculating total score
+    user_score = sum(p['points'] for p in user_stats)
+    cpu_score = sum(p['points'] for p in cpu_stats)
+
+    
+    # overtime logic
+    while round(user_score, 1) == round(cpu_score, 1):
+        print("Heading to OVERTIME...")
+        user_overtime = random.uniform(5, 15)
+        cpu_overtime = random.uniform(5, 15)
+        user_score += user_overtime
+        cpu_score += cpu_overtime
+        print(f"Overtime: You scored +{user_overtime:.1f}, CPU scored +{cpu_overtime:.1f}")
+    
+    print("\n Final Score:")
+    print(f"Your Team Score: {user_score:.1f}")
+    print(f"CPU Team Score: {cpu_score:.1f}")
+    
+    if user_score > cpu_score:
+        print("You win!")
+    elif cpu_score > user_score:
+        print('CPU wins!')
 
 def main_menu():
     while True:
@@ -64,7 +125,12 @@ def main_menu():
                 for idx, player in enumerate(user_team, start=1):
                     print(f"{idx}. {player['name']} {player['team']} - {player['position']} - {player['ppg']} PPG")
         elif choice == "3":
-            print("Simulating season...")
+            if not user_team:
+                print("You haven't drafted a team yet.")
+            else:
+                simulate_match(user_team)
+
+
         elif choice == "4":
             print("Goodbye...")
             break    
